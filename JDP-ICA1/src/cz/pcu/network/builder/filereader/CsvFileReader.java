@@ -1,9 +1,10 @@
 package cz.pcu.network.builder.filereader;
 
-import cz.pcu.network.builder.NetworkTopology;
+import java.util.Dictionary;
+import java.util.List;
 
 public class CsvFileReader implements IFileReader {
-    public NetworkTopology ReadNetworkTopology(String filePath) {
+    public List<Dictionary<String, String>> ReadNetworkTopology(String filePath) {
         return null;
     }
 }
