@@ -1,4 +1,4 @@
-package cz.pcu;
+package cz.pcu.devices;
 
 public class WifiInterface extends NetworkInterface {
     public WifiInterface(String name, int id, String ipAddress, String mask, String connectedIP) {

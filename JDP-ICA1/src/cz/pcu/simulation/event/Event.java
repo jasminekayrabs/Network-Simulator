@@ -1,10 +1,12 @@
-package cz.pcu;
+package cz.pcu.simulation.event;
+import cz.pcu.devices.Device;
+
 import java.time.LocalDateTime;
 
 public class Event{
   private int id;
   private LocalDateTime timestamp;
-  private Device targetDevice; 
+  private Device targetDevice;
   private Command command;
   private Packet packet;
 

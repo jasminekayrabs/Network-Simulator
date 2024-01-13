@@ -1,4 +1,4 @@
-package cz.pcu;
+package cz.pcu.devices;
 
 public class EthernetInterface extends NetworkInterface {
     public EthernetInterface(String name, int id, String ipAddress, String mask, String connectedIP) {

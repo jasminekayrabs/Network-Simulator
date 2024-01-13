@@ -1,4 +1,4 @@
-package cz.pcu;
+package cz.pcu.simulation.event;
 
 public class Packet {
     private int id;

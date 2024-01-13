@@ -1,13 +1,15 @@
-package cz.pcu;
+package cz.pcu.simulation.connection;
 
-public class TrafficDelayDecorator extends EnvEffectsDecorator {
-    public TrafficDelayDecorator(IConnection connection) {
+import cz.pcu.devices.Device;
+
+public class DataCorruptionDecorator extends EnvEffectsDecorator {
+    public DataCorruptionDecorator(IConnection connection) {
         super(connection);
     }
 
     @Override
     protected void applyEffect() {
-        System.out.println("Applying traffic delay effect to the connection.");
+        System.out.println("Applying data corruption effect to the connection.");
     }
 
     @Override

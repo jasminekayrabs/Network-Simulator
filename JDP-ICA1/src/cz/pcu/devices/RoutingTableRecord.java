@@ -1,4 +1,5 @@
-package cz.pcu;
+package cz.pcu.devices;
+
 public class RoutingTableRecord {
     private String networkDestination;
     private String netmask;

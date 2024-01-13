@@ -1,4 +1,4 @@
-package cz.pcu;
+package cz.pcu.simulation.connection;
 
 public abstract class EnvEffectsDecorator implements IConnection {
     protected IConnection connection;

@@ -1,5 +1,5 @@
-package cz.pcu;
-import java.util.List;
+package cz.pcu.devices;
+import cz.pcu.devices.RoutingTable;
 
 public abstract class NetworkProtocol {
     private String name;

@@ -1,7 +1,4 @@
-package cz.pcu;
-
-import java.util.ArrayList;
-import java.util.List;
+package cz.pcu.devices;
 
 class CAMTableRecord {
     private String macAddress;

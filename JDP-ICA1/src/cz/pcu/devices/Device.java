@@ -1,12 +1,13 @@
-package cz.pcu;
+package cz.pcu.devices;
+
 import java.util.List;
 
-abstract class Device {
+public abstract class Device {
     private int id;
     private String name;
     private String macAddress;
     private List<NetworkInterface> interfaces;
-    private NetworkProtocol protocol; 
+    private NetworkProtocol protocol;
 
     public Device(int id, String name, String macAddress, List<NetworkInterface> interfaces, NetworkProtocol protocol) {
         this.id = id;

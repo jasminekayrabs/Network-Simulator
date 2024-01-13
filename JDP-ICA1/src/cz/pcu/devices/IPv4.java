@@ -1,5 +1,4 @@
-package cz.pcu;
-import java.util.List;
+package cz.pcu.devices;
 
 public class IPv4 extends NetworkProtocol {
     public IPv4(String name) {

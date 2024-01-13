@@ -1,4 +1,8 @@
-package cz.pcu;
+package cz.pcu.simulation;
+
+import cz.pcu.devices.Device;
+import cz.pcu.simulation.connection.IConnection;
+import cz.pcu.simulation.event.IEventScheduler;
 
 import java.util.ArrayList;
 import java.util.List;

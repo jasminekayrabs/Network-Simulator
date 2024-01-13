@@ -1,4 +1,4 @@
-package cz.pcu;
+package cz.pcu.simulation.event;
 
 //Singleton
 //Priority queue to sort events based on their time stamps
@@ -6,7 +6,6 @@ package cz.pcu;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.time.LocalDateTime;
 
 public class EventScheduler implements IEventScheduler {
     private static EventScheduler instance;

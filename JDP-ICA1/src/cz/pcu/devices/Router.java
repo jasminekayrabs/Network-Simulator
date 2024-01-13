@@ -1,4 +1,5 @@
-package cz.pcu;
+package cz.pcu.devices;
+
 import java.util.List;
 
 class Router extends Device {

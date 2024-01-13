@@ -1,14 +1,15 @@
-package cz.pcu;
+package cz.pcu.simulation.connection;
 
-public class ElectromagneticInterferenceDecorator extends EnvEffectsDecorator {
-    public ElectromagneticInterferenceDecorator(IConnection connection) {
+import cz.pcu.devices.Device;
+
+public class TrafficDelayDecorator extends EnvEffectsDecorator {
+    public TrafficDelayDecorator(IConnection connection) {
         super(connection);
     }
 
     @Override
     protected void applyEffect() {
-        // Logic to apply electromagnetic interference effect
-        System.out.println("Applying electromagnetic interference effect to the connection.");
+        System.out.println("Applying traffic delay effect to the connection.");
     }
 
     @Override

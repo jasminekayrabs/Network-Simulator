@@ -1,6 +1,4 @@
-package cz.pcu;
-
-import java.util.List;
+package cz.pcu.devices;
 
 public class IPv6 extends NetworkProtocol {
     public IPv6(String name) {

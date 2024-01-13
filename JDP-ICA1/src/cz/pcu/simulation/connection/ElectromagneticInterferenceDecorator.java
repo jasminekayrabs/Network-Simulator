@@ -1,13 +1,16 @@
-package cz.pcu;
+package cz.pcu.simulation.connection;
 
-public class DataCorruptionDecorator extends EnvEffectsDecorator {
-    public DataCorruptionDecorator(IConnection connection) {
+import cz.pcu.devices.Device;
+
+public class ElectromagneticInterferenceDecorator extends EnvEffectsDecorator {
+    public ElectromagneticInterferenceDecorator(IConnection connection) {
         super(connection);
     }
 
     @Override
     protected void applyEffect() {
-        System.out.println("Applying data corruption effect to the connection.");
+        // Logic to apply electromagnetic interference effect
+        System.out.println("Applying electromagnetic interference effect to the connection.");
     }
 
     @Override

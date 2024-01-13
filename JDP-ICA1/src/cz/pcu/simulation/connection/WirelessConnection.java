@@ -1,4 +1,6 @@
-package cz.pcu;
+package cz.pcu.simulation.connection;
+
+import cz.pcu.devices.Device;
 
 public class WirelessConnection implements IConnection {
     private Device device1;
