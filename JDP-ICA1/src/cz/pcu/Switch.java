@@ -1,3 +1,6 @@
+package cz.pcu;
+import java.util.List;
+
 class Switch extends Device {
     private CAMTable camTable;
 
