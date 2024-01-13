@@ -1,6 +1,4 @@
-package cz.pcu.network.builder.filereader;
-
-import cz.pcu.network.builder.NetworkTopology;
+package cz.pcu.networkbuilder.filereader;
 
 import java.util.Dictionary;
 import java.util.List;
