@@ -11,7 +11,7 @@ public class EventScheduler implements IEventScheduler {
     private static EventScheduler instance;
     private Queue<Event> eventQueue;
 
-    private EventScheduler() {
+    public EventScheduler() {
         eventQueue = new PriorityQueue<>((e1, e2) -> e1.getTimestamp().compareTo(e2.getTimestamp()));
     }
 

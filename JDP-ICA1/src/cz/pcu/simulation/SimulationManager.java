@@ -10,7 +10,7 @@ public class SimulationManager {
     private IEventScheduler eventScheduler;
 
     // Private constructor for Singleton
-    private SimulationManager() {
+    public SimulationManager() {
 
     }
 
@@ -22,7 +22,7 @@ public class SimulationManager {
     }
 
     // Method to build the network
-    public void buildNetwork() {
+    public void buildNetwork(String topologyFilePath) {
 //        Device device1 = new Device("Device1");
 //        Device device2 = new Device("Device2");
 //        IConnection connection = ConnectionFactory.createConnection("wired", device1, device2);
