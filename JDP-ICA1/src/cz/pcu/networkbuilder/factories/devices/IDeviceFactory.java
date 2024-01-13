@@ -1,8 +1,8 @@
-package cz.pcu.network.builder.factories.device;
+package cz.pcu.networkbuilder.factories.devices;
 
 import cz.pcu.devices.Device;
-import cz.pcu.network.builder.factories.interfaces.IInterfaceFactory;
-import cz.pcu.network.builder.factories.protocol.IProtocolFactory;
+import cz.pcu.networkbuilder.factories.interfaces.IInterfaceFactory;
+import cz.pcu.networkbuilder.factories.protocols.IProtocolFactory;
 
 import java.util.List;
 

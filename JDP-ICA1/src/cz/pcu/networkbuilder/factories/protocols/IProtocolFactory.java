@@ -1,4 +1,4 @@
-package cz.pcu.network.builder.factories.protocol;
+package cz.pcu.networkbuilder.factories.protocols;
 
 import cz.pcu.devices.NetworkProtocol;
 

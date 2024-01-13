@@ -1,4 +1,4 @@
-package cz.pcu.network.builder.factories.interfaces;
+package cz.pcu.networkbuilder.factories.interfaces;
 
 import cz.pcu.devices.NetworkInterface;
 

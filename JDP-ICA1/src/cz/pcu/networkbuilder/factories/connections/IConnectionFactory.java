@@ -1,4 +1,4 @@
-package cz.pcu.network.builder.factories.connection;
+package cz.pcu.networkbuilder.factories.connections;
 
 import cz.pcu.simulation.connection.IConnection;
 

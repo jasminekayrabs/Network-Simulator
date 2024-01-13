@@ -1,10 +1,8 @@
-package cz.pcu.network.builder;
-import cz.pcu.network.builder.factories.connection.IConnectionFactory;
-import cz.pcu.network.builder.factories.device.IDeviceFactory;
-import cz.pcu.network.builder.filereader.IFileReader;
-import jdk.jshell.spi.ExecutionControl;
+package cz.pcu.networkbuilder;
+import cz.pcu.networkbuilder.factories.connections.IConnectionFactory;
+import cz.pcu.networkbuilder.factories.devices.IDeviceFactory;
+import cz.pcu.networkbuilder.filereader.IFileReader;
 
-import java.util.Dictionary;
 import java.util.List;
 
 public class NetworkBuilder {

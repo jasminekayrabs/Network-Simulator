@@ -1,11 +1,8 @@
 package cz.pcu.simulation;
 
-import cz.pcu.devices.Device;
-import cz.pcu.network.builder.NetworkTopology;
+import cz.pcu.networkbuilder.NetworkTopology;
 import cz.pcu.simulation.connection.IConnection;
 import cz.pcu.simulation.event.IEventScheduler;
-
-import java.util.List;
 
 public class SimulationManager {
     private NetworkTopology networkTopology;
