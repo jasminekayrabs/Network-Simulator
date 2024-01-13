@@ -1,7 +1,7 @@
 package cz.pcu;
 
 public class DataCorruptionDecorator extends EnvEffectsDecorator {
-    public DataCorruptionDecorator(NetworkConnection connection) {
+    public DataCorruptionDecorator(IConnection connection) {
         super(connection);
     }
 
@@ -18,5 +18,15 @@ public class DataCorruptionDecorator extends EnvEffectsDecorator {
     @Override
     public Device getDevice2() {
         return null;
+    }
+
+    @Override
+    public void handleEvent(String event) {
+
+    }
+
+    @Override
+    public void addConnection(Device device1, Device device2) {
+
     }
 }

@@ -1,10 +1,10 @@
 package cz.pcu;
 
-public class WiredConnection implements NetworkConnection {
+public class PhysicalConnection implements IConnection {
     private Device device1;
     private Device device2;
 
-    public WiredConnection(Device device1, Device device2) {
+    public PhysicalConnection(Device device1, Device device2) {
         this.device1 = device1;
         this.device2 = device2;
     }
@@ -25,6 +25,16 @@ public class WiredConnection implements NetworkConnection {
 
     @Override
     public void transferData() {
+
+    }
+
+    @Override
+    public void handleEvent(String event) {
+
+    }
+
+    @Override
+    public void addConnection(Device device1, Device device2) {
 
     }
 }

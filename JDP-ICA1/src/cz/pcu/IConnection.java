@@ -1,6 +1,6 @@
 package cz.pcu;
 
-public interface NetworkConnection {
+public interface IConnection {
     boolean isActive();
     Device getDevice1();
     Device getDevice2();

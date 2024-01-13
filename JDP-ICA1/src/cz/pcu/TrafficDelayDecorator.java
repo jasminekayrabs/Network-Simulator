@@ -1,7 +1,7 @@
 package cz.pcu;
 
 public class TrafficDelayDecorator extends EnvEffectsDecorator {
-    public TrafficDelayDecorator(NetworkConnection connection) {
+    public TrafficDelayDecorator(IConnection connection) {
         super(connection);
     }
 
@@ -18,5 +18,15 @@ public class TrafficDelayDecorator extends EnvEffectsDecorator {
     @Override
     public Device getDevice2() {
         return null;
+    }
+
+    @Override
+    public void handleEvent(String event) {
+
+    }
+
+    @Override
+    public void addConnection(Device device1, Device device2) {
+
     }
 }

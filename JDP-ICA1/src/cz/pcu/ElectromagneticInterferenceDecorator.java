@@ -1,7 +1,7 @@
 package cz.pcu;
 
 public class ElectromagneticInterferenceDecorator extends EnvEffectsDecorator {
-    public ElectromagneticInterferenceDecorator(NetworkConnection connection) {
+    public ElectromagneticInterferenceDecorator(IConnection connection) {
         super(connection);
     }
 
@@ -19,5 +19,15 @@ public class ElectromagneticInterferenceDecorator extends EnvEffectsDecorator {
     @Override
     public Device getDevice2() {
         return null;
+    }
+
+    @Override
+    public void handleEvent(String event) {
+
+    }
+
+    @Override
+    public void addConnection(Device device1, Device device2) {
+
     }
 }

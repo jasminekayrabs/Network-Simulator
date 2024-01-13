@@ -1,6 +1,6 @@
 package cz.pcu;
 
-public class WirelessConnection implements NetworkConnection {
+public class WirelessConnection implements IConnection {
     private Device device1;
     private Device device2;
 
@@ -26,6 +26,16 @@ public class WirelessConnection implements NetworkConnection {
 
     @Override
     public void transferData() {
+
+    }
+
+    @Override
+    public void handleEvent(String event) {
+
+    }
+
+    @Override
+    public void addConnection(Device device1, Device device2) {
 
     }
 

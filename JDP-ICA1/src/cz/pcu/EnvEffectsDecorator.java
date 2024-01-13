@@ -1,9 +1,9 @@
 package cz.pcu;
 
-public abstract class EnvEffectsDecorator implements NetworkConnection {
-    protected NetworkConnection connection;
+public abstract class EnvEffectsDecorator implements IConnection {
+    protected IConnection connection;
 
-    public EnvEffectsDecorator(NetworkConnection connection) {
+    public EnvEffectsDecorator(IConnection connection) {
         this.connection = connection;
     }
 

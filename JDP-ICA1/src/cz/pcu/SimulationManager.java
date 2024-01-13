@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SimulationManager {
-    private List<NetworkConnection> connections;
+    private List<IConnection> connections;
     private List<Device> devices;
     private static SimulationManager instance;
     private IEventScheduler eventScheduler;
@@ -25,24 +25,24 @@ public class SimulationManager {
 
     // Method to build the network
     public void buildNetwork() {
-        Device device1 = new Device("Device1");
-        Device device2 = new Device("Device2");
-        NetworkConnection connection = ConnectionFactory.createConnection("wired", device1, device2);
-
-        addDevice(device1);
-        addDevice(device2);
-        addConnection(connection);
+//        Device device1 = new Device("Device1");
+//        Device device2 = new Device("Device2");
+//        IConnection connection = ConnectionFactory.createConnection("wired", device1, device2);
+//
+//        addDevice(device1);
+//        addDevice(device2);
+//        addConnection(connection);
     }
 
     public void startSimulation() {
-        for (NetworkConnection connection : connections) {
+        for (IConnection connection : connections) {
             if (connection.isActive()) {
                 connection.transferData();
             }
         }
     }
 
-    public void addConnection(NetworkConnection connection) {
+    public void addConnection(IConnection connection) {
         connections.add(connection);
     }
 
@@ -50,7 +50,7 @@ public class SimulationManager {
         devices.add(device);
     }
 
-    public List<NetworkConnection> getConnections() {
+    public List<IConnection> getConnections() {
         return connections;
     }
 
