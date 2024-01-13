@@ -1,5 +1,8 @@
 package cz.pcu.network.builder;
 
+import cz.pcu.devices.Device;
+import cz.pcu.simulation.connection.IConnection;
+
 import java.util.List;
 
 public class NetworkTopology {
@@ -11,11 +14,20 @@ public class NetworkTopology {
         this.devices = devices;
     }
 
+
     public List<Device> getDevices() {
-        return Devices;
+        return devices;
+    }
+
+    public void setDevices(List<Device> devices) {
+        this.devices = devices;
     }
 
     public List<IConnection> getConnections() {
-        return Connections;
+        return connections;
+    }
+
+    public void setConnections(List<IConnection> connections) {
+        this.connections = connections;
     }
 }

@@ -1,22 +1,19 @@
 package cz.pcu.simulation;
 
 import cz.pcu.devices.Device;
+import cz.pcu.network.builder.NetworkTopology;
 import cz.pcu.simulation.connection.IConnection;
 import cz.pcu.simulation.event.IEventScheduler;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SimulationManager {
-    private List<IConnection> connections;
-    private List<Device> devices;
+    private NetworkTopology networkTopology;
     private static SimulationManager instance;
     private IEventScheduler eventScheduler;
 
     // Private constructor for Singleton
     private SimulationManager() {
-        connections = new ArrayList<>();
-        devices = new ArrayList<>();
 
     }
 
@@ -39,29 +36,12 @@ public class SimulationManager {
     }
 
     public void startSimulation() {
-        for (IConnection connection : connections) {
+        for (IConnection connection : networkTopology.getConnections()) {
             if (connection.isActive()) {
                 connection.transferData();
             }
         }
     }
-
-    public void addConnection(IConnection connection) {
-        connections.add(connection);
-    }
-
-    public void addDevice(Device device) {
-        devices.add(device);
-    }
-
-    public List<IConnection> getConnections() {
-        return connections;
-    }
-
-    public List<Device> getDevices() {
-        return devices;
-    }
-
     public IEventScheduler getEventScheduler() {
         return eventScheduler;
     }
